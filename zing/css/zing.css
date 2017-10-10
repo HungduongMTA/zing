@@ -173,7 +173,8 @@ a {
     padding: 0 10px;
     line-height: 40px;
 }
-.main-menu li>a>i{
+
+.main-menu li>a>i {
     font-size: 20px;
     margin-right: 20px;
 }
@@ -387,10 +388,12 @@ a>span {
     color: #721799;
     font-size: 25px;
 }
-.title-section span{
+
+.title-section span {
     color: #721799;
     font-size: 22px;
 }
+
 .music-item {
     height: 230px;
     padding: 0 10px;
@@ -398,11 +401,12 @@ a>span {
     margin: 10px 0;
 }
 
-.thumb img {
+.thumb img,
+.slide-body>a>img,
+.slide-thumb>ul>li>a>img{
     height: auto;
     width: 100%;
 }
-
 
 .txt-darkgray {
     color: #888;
@@ -475,38 +479,67 @@ a>span {
     width: 100%;
 }
 
-.wrap-right{
+.wrap-right {
     min-width: 300px;
 }
-.wrap-right .quang-cao{
+
+.wrap-right .quang-cao {
     height: 250px;
     margin-bottom: 20px;
     border: 1px solid #721799;
 }
 
-.sm-video{
+.sm-video {
     width: 110px;
     float: left;
     margin-right: 15px;
     max-height: 65px;
 }
 
-.thumb.sm-video span{
-    width:25px;
-    height: 25px;   
+.thumb.sm-video span {
+    width: 25px;
+    height: 25px;
     font-size: 25px;
     margin: -10px 0 0 -7px
 }
 
-.wiget ul>li{
+.wiget ul>li {
     border-bottom: 1px solid #f2f2f2;
     min-height: 75px;
 }
 
-.wiget .wiget-content ul>li>div>.txt-primary{
+.wiget .wiget-content ul>li>div>.txt-primary {
     font-size: 16px;
 }
 
-.wiget .wiget-content ul>li>div>.txt-darkgray{
+.wiget .wiget-content ul>li>div>.txt-darkgray {
     font-size: 12px;
+}
+
+.slide-body {
+    min-width: 100%;
+    position: relative;
+}
+
+.slide-thumb {
+    margin: 10px -5px;
+}
+
+.col-md-20 {
+    float: left;
+    width: 20%;
+    padding: 0px 5px;
+}
+
+.slide-body >a {
+    display: none;
+    position: relative;
+}
+
+.slide-active{
+    display: block !important;
+}
+
+.clear-fix::after{
+    clear: both;
 }
